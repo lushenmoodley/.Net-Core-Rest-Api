@@ -18,5 +18,12 @@ namespace HotelListing.API.Data
 
              */
         }
+
+        //letting the db context know about the database tables
+        public DbSet<Hotel> Hotels { get; set; }
+
+        public DbSet<Country> Countries { get; set; }
+
+
     }
 }
