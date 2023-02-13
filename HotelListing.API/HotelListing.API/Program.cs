@@ -1,7 +1,19 @@
+using HotelListing.API.Data;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+//let the api know it should include entity framework and entity framework should connect to the database
+
+var connectionString = builder.Configuration.GetConnectionString("HotelListingDbConnectionString");
+builder.Services.AddDbContext<HotelListingDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+});//represent the connection to the database. Its object that will run.
+
+
 
 // Add services to the container.
 
