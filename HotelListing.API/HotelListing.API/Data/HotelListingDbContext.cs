@@ -24,6 +24,58 @@ namespace HotelListing.API.Data
 
         public DbSet<Country> Countries { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Country>().HasData(
+                new Country
+                {
+                    Id=1,
+                    Name="South Africa",
+                    ShortName="SA"
+                },
+                 new Country
+                 {
+                     Id = 2,
+                     Name = "United States Of America",
+                     ShortName = "USA"
+                 }
+                
+             );
+
+            modelBuilder.Entity<Hotel>().HasData(
+                new Hotel
+                {
+                    Id = 1,
+                    Name = "Sandton City Hotel",
+                    Address = "Sandton City",
+                    Rating = 4.5,
+                    CountryId = 1
+              
+                },
+                new Hotel
+                {
+                    Id = 2,
+                    Name = "The Radisson Blu Hotel",
+                    Address = "New York",
+                    Rating = 5,
+                    CountryId = 2
+                },
+                new Hotel
+                {
+                    Id = 3,
+                    Name = "The Beverly Hotel",
+                    Address = "Umhlanga Rocks",
+                    Rating = 6,
+                    CountryId = 1,
+
+                }
+
+            );
+
+
+        }
+
 
     }
 }
