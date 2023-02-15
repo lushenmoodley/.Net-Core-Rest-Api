@@ -31,3 +31,27 @@ IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Addr
 2023-02-15 16:39:02.628 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20230215143807_SeededCountriesAndHotels', N'7.0.2');
+2023-02-15 17:20:47.360 +02:00 [INF] Now listening on: https://localhost:7167
+2023-02-15 17:20:47.758 +02:00 [INF] Now listening on: http://localhost:5199
+2023-02-15 17:20:47.801 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-15 17:20:47.804 +02:00 [INF] Hosting environment: Development
+2023-02-15 17:20:47.807 +02:00 [INF] Content root path: C:\Users\User\Desktop\.Net-Core-Rest-Api\HotelListing.API\HotelListing.API
+2023-02-15 17:20:50.042 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger - -
+2023-02-15 17:20:50.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger - - - 301 0 - 559.2556ms
+2023-02-15 17:20:50.723 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger/index.html - -
+2023-02-15 17:20:52.046 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger/index.html - - - 200 - text/html;charset=utf-8 1323.4192ms
+2023-02-15 17:20:52.277 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger/swagger-ui.css - -
+2023-02-15 17:20:52.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger/swagger-ui-bundle.js - -
+2023-02-15 17:20:52.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger/swagger-ui-standalone-preset.js - -
+2023-02-15 17:20:52.288 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 17:20:52.493 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 204.9436ms
+2023-02-15 17:20:52.582 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-02-15 17:20:52.582 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-02-15 17:20:52.720 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-02-15 17:20:52.725 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 441.4566ms
+2023-02-15 17:20:52.728 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger/swagger-ui.css - - - 200 143943 text/css 450.9872ms
+2023-02-15 17:20:52.731 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 448.8282ms
+2023-02-15 17:20:53.538 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/_vs/browserLink - -
+2023-02-15 17:20:54.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 499.2858ms
+2023-02-15 17:20:54.890 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7167/swagger/v1/swagger.json - -
+2023-02-15 17:20:55.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7167/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 877.9175ms
